@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Versoca | Own The Street</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">VERSOCA</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">
+          Cart
+          <span class="cart-icon">🛒</span>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </nav>
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">
+      Cart
+      <span id="cart-count-mobile" class="cart-count">0</span>
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">Premium Urban Streetwear</p>
+        <h1>Own The Street.</h1>
+        <p class="hero-text">
+          Versoca blends bold design with premium fabrics for those who own their identity.
+          Elevate your street style with pieces made to stand out.
+        </p>
+        <a href="shop.html" class="btn primary-btn">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <!-- Royalty‑free Unsplash image -->
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1400&q=80" alt="Versoca streetwear model" />
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Featured Drops</h2>
+        <p>Handpicked pieces from our latest collection.</p>
+      </div>
+      <div id="featured-products" class="product-grid">
+        <!-- Filled by script.js using product data -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Versoca</h3>
+        <p>Bold streetwear for the modern generation.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@versoca.com">contact@versoca.com</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p>
+          Instagram: <a href="#">@versoca</a><br />
+          Twitter: <a href="#">@versoca</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Versoca. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

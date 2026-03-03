@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart | Versoca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">VERSOCA</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link active">
+          Cart
+          <span class="cart-icon">🛒</span>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </nav>
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html" class="active">
+      Cart
+      <span id="cart-count-mobile" class="cart-count">0</span>
+    </a>
+  </nav>
+
+  <main class="page-main">
+    <section class="section">
+      <div class="section-header">
+        <h1>Your Cart</h1>
+        <p>Review your items before checkout.</p>
+      </div>
+
+      <!-- Cart Items -->
+      <div id="cart-container" class="cart-container">
+        <!-- Filled dynamically from localStorage -->
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span id="cart-total">₹0</span>
+        </div>
+        <div class="cart-actions">
+          <a href="shop.html" class="btn secondary-btn">Continue Shopping</a>
+          <button type="button" class="btn primary-btn" id="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Versoca</h3>
+        <p>Bold streetwear for the modern generation.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@versoca.com">contact@versoca.com</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p>
+          Instagram: <a href="#">@versoca</a><br />
+          Twitter: <a href="#">@versoca</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Versoca. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+
